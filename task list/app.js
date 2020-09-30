@@ -23,6 +23,20 @@ function loadEventListeners() {
   // Filter tasks event
   filter.addEventListener('keyup', filterTasks);
 }
+// Load all event listeners
+function loadEventListeners() {
+  // DOM Load event
+  document.addEventListener('DOMContentLoaded', getTasks);
+  // Add task event
+  form.addEventListener('submit', addTask);
+  // Remove task event
+  taskList.addEventListener('click', removeTask);
+  // Clear task event
+   // DOM Load event
+  clearBtn.addEventListener('click', clearTasks);
+  // Filter tasks event
+  filter.addEventListener('keyup', filterTasks);
+}
 
 // Get Tasks from LS
 function getTasks() {
